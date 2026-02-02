@@ -7,6 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 SENDER_EMAIL = os.getenv("SENDER_EMAIL")
+print(SENDER_EMAIL)
 SENDER_PASSWORD = os.getenv("SENDER_PASSWORD")
 
 recipients_list = [
