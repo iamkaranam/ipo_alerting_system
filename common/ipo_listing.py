@@ -7,6 +7,10 @@ load_dotenv()
 
 
 def get_ipo_list(from_date = None,to_date = None):
+    """
+    Get ipo list for a given from_date and to_date. 
+    Default is today (in UTC)
+    """
     if not from_date:
         from_date = str(datetime.today().date())
     if not to_date:
@@ -20,6 +24,10 @@ def get_ipo_list(from_date = None,to_date = None):
     return ipo_list
 
 def build_email_body(filtered_ipos):
+
+    """
+    this function formats the email body into a table of filtered ipos
+    """
 
     if not filtered_ipos:
         body = (
