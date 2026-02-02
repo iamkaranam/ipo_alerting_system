@@ -15,7 +15,7 @@ recipients_list = [
 
 if __name__ == "__main__":
 
-    ipo_threshold = 200000
+    ipo_threshold = 200000000
 
     ipo_list = get_ipo_list()
     filtered_ipos = [
