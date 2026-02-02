@@ -2,7 +2,7 @@ name: IPO Alert Cron
 
 on:
   schedule:
-    - cron: "50 12 * * *"   # runs daily at 03:00 UTC
+    - cron: "0 * * * *"   # runs daily at 03:00 UTC
   workflow_dispatch:      # manual trigger (important for demo)
 
 jobs:
